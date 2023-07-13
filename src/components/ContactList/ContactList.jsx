@@ -1,12 +1,12 @@
 import ContactItem from 'components/ContactItem/ContactItem';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchContacts } from 'redux/operations';
+import { fetchContacts } from 'redux/contacts/operations';
 import {
   selectFilteredContacts,
   selectError,
   selectLoading,
-} from 'redux/selectors';
+} from 'redux/contacts/selectors';
 
 import css from './ContactList.module.css';
 

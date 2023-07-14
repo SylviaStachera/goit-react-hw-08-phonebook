@@ -1,20 +1,19 @@
-import ContactForm from './ContactForm/ContactForm';
-import ContactList from './ContactList/ContactList';
-import ContactItem from './ContactItem/ContactItem';
-import Filter from './Filter/Filter';
+import { Route, Routes } from 'react-router-dom';
+import { Layout } from './Layout/Layot';
+import { HomePage } from 'pages/HomePage';
+import { LoginPage } from 'pages/LoginPage';
+import { RegisterPage } from 'pages/RegisterPage';
+import { ContactsPage } from 'pages/ContactsPage';
 
 export const App = () => {
   return (
-    <div className="wraper">
-      <h1>Phonebook</h1>
-      <ContactForm />
-
-      <h2>Contacts</h2>
-      <Filter />
-
-      <ContactList>
-        <ContactItem />
-      </ContactList>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="login" element={<LoginPage />} />
+        <Route path="register" element={<RegisterPage />} />
+        <Route path="contacts" element={<ContactsPage />} />
+      </Route>
+    </Routes>
   );
 };

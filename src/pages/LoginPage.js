@@ -7,3 +7,7 @@ export const LoginPage = () => {
     </div>
   );
 };
+
+//UserName: Mango
+//emial: mango@gmail.com
+//password: mango123

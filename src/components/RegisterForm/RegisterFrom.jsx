@@ -8,21 +8,31 @@ export const RegisterForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
+
+    const name = form.elements.name.value;
+    const email = form.elements.email.value;
+    const password = form.elements.password.value;
+
+    // console.log('Name:', name);
+    // console.log('Email:', email);
+    // console.log('Password:', password);
+
     dispatch(
       register({
-        name: form.elements.name.value,
-        email: form.elements.email.value,
-        password: form.elements.password.value,
+        name: name,
+        email: email,
+        password: password,
       })
     );
+
     form.reset();
   };
 
   return (
     <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
       <label className={css.label}>
-        UserName
-        <input type="text" name="username" />
+        Username
+        <input type="text" name="name" />
       </label>
       <label className={css.label}>
         Email

@@ -1,4 +1,4 @@
-import { register, logIn, logOut } from './operations';
+import { register, logIn, logOut, refreshUser } from './operations';
 
 const { createSlice } = require('@reduxjs/toolkit');
 
@@ -15,7 +15,11 @@ const authSlice = createSlice({
   initialState,
   extraReducers: {
     [register.pending](state, actions) {},
-    [register.fulfilled](state, actions) {},
+    [register.fulfilled](state, actions) {
+      state.user = actions.payload.user;
+      state.token = actions.payload.token;
+      state.isLoggedIn = true;
+    },
     [register.rejected](state, actions) {
       state.error = actions.payload;
     },
@@ -38,6 +42,18 @@ const authSlice = createSlice({
     },
     [logOut.rejected](state, actions) {
       state.error = actions.payload;
+    },
+
+    [refreshUser.pending](state, actions) {
+      state.isRefreshing = true;
+    },
+    [refreshUser.fulfilled](state, actions) {
+      state.user = actions.payload;
+      state.isLoggedIn = true;
+      state.isRefreshing = false;
+    },
+    [refreshUser.rejected](state, actions) {
+      state.isRefreshing = false;
     },
   },
 });

@@ -8,7 +8,7 @@ export const AuthNav = () => {
         Register
       </NavLink>
       <NavLink className={css.link} to="/login">
-        Login
+        Log In
       </NavLink>
     </div>
   );

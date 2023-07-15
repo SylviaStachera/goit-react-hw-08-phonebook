@@ -25,7 +25,7 @@ export const RegisterForm = () => {
       })
     );
 
-    form.reset();
+    // form.reset();
   };
 
   return (

@@ -1,6 +1,6 @@
 import { LoginForm } from 'components/LoginForm/LoginForm';
 
-export const LoginPage = () => {
+const LoginPage = () => {
   return (
     <div>
       <LoginForm />
@@ -8,6 +8,4 @@ export const LoginPage = () => {
   );
 };
 
-//UserName: Mango
-//emial: mango@gmail.com
-//password: mango123
+export default LoginPage;

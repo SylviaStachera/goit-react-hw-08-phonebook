@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/206.8a159571.chunk.js","mappings":"uMAAaA,EAAW,WACtB,OAAO,gBAAKC,UAAU,SAAf,8BACR,EACD,W","sources":["pages/HomePage.js"],"sourcesContent":["export const HomePage = () => {\n  return <div className=\"wraper\">This is home page</div>;\n};\nexport default HomePage;"],"names":["HomePage","className"],"sourceRoot":""}

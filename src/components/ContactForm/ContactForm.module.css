@@ -1,37 +1,32 @@
-.form {
-  margin-bottom: 20px;
-  padding: 10px 10px;
+.wrapper {
+  width: 90%;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border-bottom: 1px solid rgb(42, 54, 59);
+  padding-bottom: 10px;
 }
-.label {
+
+.header {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.item {
+  margin-bottom: 17px;
 }
 
 .input {
-  width: 180px;
-  transition: border 250ms linear, box-shadow 250ms linear;
-}
-.input:focus-visible,
-.input:hover {
-  outline: 0;
-  border: 0.5px solid rgba(0, 231, 255, 1);
-  box-shadow: 0px 0px 24px -5px rgba(0, 231, 255, 1);
-}
-
-.btn-submit {
-  width: 100px;
-  background-color: initial;
-  border: 1px solid black;
+  border: 1px solid #2b6cb0;
   border-radius: 5px;
-  cursor: pointer;
-  transition: border 250ms linear, box-shadow 250ms linear;
+}
+.input-phone {
+  border: 1px solid #2b6cb0;
+  border-left: 0px;
+  border-radius: 0px 5px 5px 0px;
 }
 
-.btn-submit:hover {
-  border: 0.5px solid rgba(0, 231, 255, 1);
-  box-shadow: 0px 0px 24px -5px rgba(0, 231, 255, 1);
+.input-add {
+  border: 1px solid #2b6cb0;
+  border-right: 0px;
+  border-radius: 5px 0px 0px 5px;
 }

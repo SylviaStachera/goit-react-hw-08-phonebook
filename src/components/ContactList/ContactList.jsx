@@ -29,7 +29,7 @@ const ContactList = () => {
       )}
 
       {error && <p>{error}</p>}
-      <ul>
+      <ul className={css.list}>
         {filteredContacts.map(contact => {
           return (
             <li className={css['list-item']} key={contact.id}>

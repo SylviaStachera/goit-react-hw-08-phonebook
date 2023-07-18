@@ -5,7 +5,7 @@ import { AppBar } from 'components/AppBar/AppBar';
 
 export const Layout = ({ children }) => {
   return (
-    <div className={css.container}>
+    <div className={css['gradient-background']}>
       <AppBar />
       <Suspense fallback="{<div>Loading...</div>}">
         <Outlet />

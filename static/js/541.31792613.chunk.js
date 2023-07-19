@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[541],{1541:function(e,o,r){r.r(o),r.d(o,{default:function(){return c}});var n="HomePage_wrapper__fbr7T",a="HomePage_header__04GYX",t=r(3329),c=function(){return(0,t.jsxs)("div",{className:n,children:[(0,t.jsx)("h1",{className:a,children:"Welcome to the Phonebook Application! \ud83d\udcde "}),(0,t.jsx)("p",{children:"Please register or login"})]})}}}]);
+//# sourceMappingURL=541.31792613.chunk.js.map

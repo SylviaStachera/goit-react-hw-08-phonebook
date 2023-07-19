@@ -20,11 +20,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-.wraper {
-  margin-top: 15px;
-  margin-left: 15px;
-  width: 450px;
-  display: flex;
-  flex-direction: column;
-}

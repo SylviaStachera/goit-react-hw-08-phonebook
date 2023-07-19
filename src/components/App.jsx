@@ -9,10 +9,10 @@ import { refreshUser } from 'redux/auth/operations';
 
 import css from './App.module.css';
 
-const HomePage = lazy(() => import('../pages/HomePage'));
-const LoginPage = lazy(() => import('../pages/LoginPage'));
-const RegisterPage = lazy(() => import('../pages/RegisterPage'));
-const ContactsPage = lazy(() => import('../pages/ContactsPage'));
+const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
+const LoginPage = lazy(() => import('../pages/LoginPage/LoginPage'));
+const RegisterPage = lazy(() => import('../pages/RegisterPage/RegisterPage'));
+const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));
 
 export const App = () => {
   const dispatch = useDispatch();

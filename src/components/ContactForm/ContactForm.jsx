@@ -48,7 +48,7 @@ const ContactForm = () => {
       <Heading className={css.header} size="md">
         Phonebook
       </Heading>
-      <FormControl className={css.wrapper} onSubmit={handleSubmit}>
+      <FormControl as="form" className={css.wrapper} onSubmit={handleSubmit}>
         <div className={css.item}>
           <FormLabel>Name:</FormLabel>
           <Input
@@ -80,7 +80,9 @@ const ContactForm = () => {
         </div>
 
         <ButtonGroup size="sm" variant="outline" spacing="6">
-          <Button colorScheme="blue">Add contact</Button>
+          <Button type="submit" colorScheme="blue">
+            Add contact
+          </Button>
         </ButtonGroup>
       </FormControl>
     </div>
